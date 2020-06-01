@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<button onclick="displayArray()">Click To See Massive</button>
+		<p id="array"></p>
+		<script>
+			
+			var myArray = ['a', 'b', 'c', 'b', 'a'];
+			document.getElementById("array").innerHTML = myArray;
+
+			function displayArray() {
+				var myArray_1 = myArray.sort();
+				var n = myArray_1.filter((it, index) => index === myArray.indexOf(it = it.trim()));
+                document.getElementById("array").innerHTML = n;
+			} 
+		</script>
+	</body>
+</html>

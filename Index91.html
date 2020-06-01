@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Пример 1 с массивами</title>
+	</head>
+	<body>
+		<p id="array" onclick="displayArray()">Кликнуть на текст, чтобы увидеть очень простой пример работы с массивами!</p>
+		<script type="text/javascript">
+			var myArray = new Array();
+			myArray[0] = 1989;
+			myArray[1] = "Азаренко";
+			myArray[2] = true;
+			
+			function displayArray() {
+				document.getElementById("array").innerHTML = myArray;
+			}
+		</script>
+	</body>
+</html>

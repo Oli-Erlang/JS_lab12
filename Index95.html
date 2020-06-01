@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<button onclick="displayArray()">Click To See Massive</button>
+		<p id="array"></p>
+		<script>
+			
+			var myArray_1 = [7, 8, 9];
+			document.getElementById("array").innerHTML = myArray_1;
+
+			function displayArray() {
+			  myArray_1.reverse();
+			  document.getElementById("array").innerHTML = myArray_1;
+			} 
+		</script>
+	</body>
+</html>

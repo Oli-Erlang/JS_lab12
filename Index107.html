@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<button onclick="displayArray()">Click To See Massive</button>
+		<p id="array"></p>
+		<script>
+			
+			var myArray = [5, 6, 1, 30, 8, 0, 2, 10, 4];
+			document.getElementById("array").innerHTML = myArray;
+
+			function displayArray() {
+				myArray.sort(function (a, b) { return a - b });
+				 document.getElementById("array").innerHTML = myArray;
+			} 
+		</script>
+	</body>
+</html>

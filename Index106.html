@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<button onclick="displayArray()">Click To See Massive</button>
+		<p id="array"></p>
+		<script>
+			
+			var myArray = [1, 2, 3, 4, 5];
+			document.getElementById("array").innerHTML = myArray;
+
+			function displayArray() {
+				 myArray.splice(1, 0, "a", "b");
+				 myArray.splice(6, 0, "c");
+				 myArray.splice(8, 0, "e");
+				 document.getElementById("array").innerHTML = myArray;
+			} 
+		</script>
+	</body>
+</html>

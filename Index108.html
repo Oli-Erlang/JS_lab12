@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<p id="array"></p>
+		<script>
+			
+			var myArray = [5, , 2, , 18];
+			var myArray_1 = '';
+			for (var i = 0; i < myArray.length; i++) {
+			  myArray_1 += myArray[i] + ' ';
+			}
+			document.getElementById("array").innerHTML = myArray_1; 
+		</script>
+	</body>
+</html>
